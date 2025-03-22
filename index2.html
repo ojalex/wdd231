@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Home Page</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Body */
+        body {
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        /* Header */
+        header {
+            background-color: #1c3b5d;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            justify-content: center;
+        }
+
+        header img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: black;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        /* Main Content */
+        main {
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+            text-align: left;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        /* Two-column grid */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        /* Card Styling */
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Full-width section */
+        .full-width {
+            background-color: #1c3b5d;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        /* Buttons */
+        .buttons {
+            margin: 10px 0;
+        }
+
+        button {
+            background: black;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        button:hover {
+            background: #ffd700;
+            color: black;
+        }
+
+        /* Course List */
+        .course-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .course {
+            background: #8b4513;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1c3b5d;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr; /* Stack on small screens */
+            }
+
+            .course-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="images/profile.jpg" alt="Profile Image">
+        <h1>Rubia M. Francesco</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Chamber</a>
+        <a href="#">GitHub Profile</a>
+        <a href="#">LinkedIn</a>
+    </nav>
+
+    <main>
+        <h2>Home</h2>
+
+        <div class="container">
+            <div class="card">
+                <h3>Course Work</h3>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Toloria, Madagascar</h3>
+                <img src="images/baobab.jpg" alt="Baobab Trees" width="100%">
+                <p>Baobab Trees</p>
+            </div>
+        </div>
+
+        <section class="full-width">
+            <h3>Web and Computer Programming Certificate</h3>
+            <div class="buttons">
+                <button>All</button>
+                <button>CSE</button>
+                <button>WDD</button>
+            </div>
+            <div class="course-list">
+                <div class="course">CSE 110</div>
+                <div class="course">WDD 130</div>
+                <div class="course">CSE 111</div>
+                <div class="course">CSE 210</div>
+                <div class="course">WDD 131</div>
+                <div class="course">WDD 231</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2025 🌸 Rubia Magdalena Francesco 🌸 Madagascar</p>
+        <p>Last Update: 01/01/1970 12:00:00</p>
+    </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,27 @@
+/* Larger.css (Media Queries for Desktop) */
+@media (min-width: 768px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+    .hidden {
+        display: flex;
+    }
+    
+    .container2 {
+        flex-direction: row; /* Arrange items in a row */
+        justify-content: space-between;
+        gap: 20px; /* Space between the two columns */
+    }
+    
+    .left-column {
+        flex: 2; /* larger */
+    }
+
+    .right-column {
+        flex: 1; /* smaller */
+    }
+
+
+}
+    

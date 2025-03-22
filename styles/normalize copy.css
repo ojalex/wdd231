@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #1c3b5d;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    justify-content: center;
+}
+
+header img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: black;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+nav a:focus {
+    outline: 2px solid #ffd700;
+    outline-offset: 2px;
+}
+
+/* Main Content */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+main h1 {
+    margin-bottom: 12px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Course Cards working*/
+ .course-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin-top: 5px;
+}
+/* Course list section working*/
+.course-list section {
+    background-color: #8b4513;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+ul {
+    margin: 4%;
+    padding-left: 1.5rem; /* Indent for clarity */
+    list-style: none; /* Remove bullets */
+}
+
+section button {
+    text-align: center;
+}
+
+button {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    width: 12%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #ffd700;
+    color: black;
+}
+
+.buttons {
+    text-align: center;
+    grid-column: span 2;
+    border-radius: 5px;
+    display: block;
+    background-color: white;
+
+}
+/* Make section span across both columns */
+.full-width {
+    grid-column: span 2; /* Spans both columns */
+    background-color: #1c3b5d;
+    color: white;
+    text-align: center;
+    
+    
+}
+
+.bluebgc {
+    background-color: #1c3b5d;
+    color: white;
+    text-align: center;
+    padding: 6px;
+    width: 100%;
+}
+
+/* Sections 
+.container {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping 
+    margin: 0 auto;
+    max-width: 1200px;
+} */
+.container2 {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Adds space between stacked sections */
+    width: 90%;
+    margin: auto;
+    flex-wrap: nowrap;
+}
+/* Two-column grid */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Card Styling */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.left-column {
+    flex: 7; /* 70% width */
+  
+}
+
+.right-column {
+    flex: 3; /* 30% width */
+   
+}
+/* Columns */
+.left-column, .right-column {
+    flex: 1;
+    background-color: white;
+    box-sizing: border-box;
+    border: rgb(255, 254, 254);
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Adds shadow */
+}
+/* Footer */
+footer {
+    background-color: #1c3b5d;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
