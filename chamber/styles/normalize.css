@@ -1,0 +1,62 @@
+/* Normalize and reset styles across browsers */
+
+/* 1. Improve text rendering */
+html {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth;
+}
+
+/* 2. Remove default margin and padding */
+body, h1, h2, h3, h4, h5, h6, p, blockquote, figure, 
+dl, dd, ul, ol, li, pre, fieldset, legend, button, input, textarea {
+    margin: 0;
+    padding: 0;
+}
+
+/* 3. Set a base font */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #333;
+}
+
+/* 4. Improve media defaults */
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 5. Remove list styles on ul, ol elements */
+ul, ol {
+    list-style: none;
+}
+
+/* 6. Remove default hyperlink styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 7. Improve button appearance */
+button, input, select, textarea {
+    font: inherit;
+    border: none;
+    outline: none;
+}
+
+/* 8. Remove border on images inside links */
+a img {
+    border: none;
+}
+
+/* 9. Prevent horizontal scrolling */
+* {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}

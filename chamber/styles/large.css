@@ -1,0 +1,32 @@
+/* Media Query for Large Devices */
+@media (min-width: 1024px) {
+    header nav .nav-links li {
+        margin-left: 30px;
+    }
+
+    .hero {
+        padding: 80px 60px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+
+    .cta-button {
+        padding: 16px 32px;
+        font-size: 18px;
+    }
+
+    .features {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .features .feature h2 {
+        font-size: 26px;
+    }
+}

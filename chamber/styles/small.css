@@ -1,0 +1,40 @@
+/* Media Query for Small Devices (Mobile) */
+@media (max-width: 767px) {
+    header .logo {
+        font-size: 18px;
+    }
+
+    header nav .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header nav .nav-links li a {
+        font-size: 16px;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .cta-button {
+        padding: 14px 24px;
+        font-size: 16px;
+    }
+
+    .features .feature {
+        margin-bottom: 15px;
+    }
+
+    .features .feature h2 {
+        font-size: 20px;
+    }
+}

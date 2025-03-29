@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official Chamber of Commerce website providing business resources, networking, and community events.">
+    <meta name="author" content="WDD 231 Student">
+    <meta property="og:title" content="Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/chamber-logo.png">
+    <meta property="og:url" content="https://yourchambersite.com">
+    <title>Chamber of Commerce</title>
+ 
+    <!-- Normalize or Reset CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles/directory.css">
+    <!-- Mobile Styles -->
+    <link rel="stylesheet" href="styles/small.css" media="screen and (max-width: 768px)">
+    <!-- Large Screen Styles -->
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 1024px)">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Chamber of Commerce</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <img src="images/OJ Alex.jpeg" alt="hero-image">
+        <h1>Welcome to Our Chamber of Commerce</h1>
+        <p>Empowering local businesses and fostering economic growth.</p>
+        <a href="join.html" class="cta-button">Join Us Today</a>
+    </section>
+    <section class="hero">
+        <img src="images/OJ Alex.jpeg" alt="Chamber of Commerce Hero Image" class="hero-img">
+        <div class="hero-text">
+            <h1>Welcome to Our Chamber of Commerce</h1>
+            <p>Empowering local businesses and fostering economic growth.</p>
+            <a href="join.html" class="cta-button">Join Us Today</a>
+        </div>
+    </section>
+    
+    <section class="features">
+        <div class="feature">
+            <h2>Community & Events</h2>
+            <p>Discover local events and networking opportunities.</p>
+            <a href="discover.html">Explore More</a>
+        </div>
+        <div class="feature">
+            <h2>Business Directory</h2>
+            <p>Find and connect with businesses in our network.</p>
+            <a href="directory.html">Browse Directory</a>
+        </div>
+        <div class="feature">
+            <h2>Membership Benefits</h2>
+            <p>Gain exclusive access to resources and support.</p>
+            <a href="join.html">Learn More</a>
+        </div>
+    </section>
+    
+    <footer>
+        <p>Contact: info@yourchambersite.com | Phone: (123) 456-7890</p>
+        <p>&copy; 2025 Chamber of Commerce. All rights reserved.</p>
+        <p>Developed by WDD 231 Student | Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    
+    <script>
+        document.getElementById("lastModified").textContent = document.lastModified;
+    </script>
+</body>
+</html>
