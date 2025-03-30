@@ -1,6 +1,7 @@
 /* General reset and normalize */
 @import url('normalize.css');
 
+
 /* Basic styles for body */
 body {
     font-family: 'Arial', sans-serif;
@@ -17,28 +18,36 @@ header {
     color: white;
     padding: 10px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
+/* Logo */
 header .logo {
     font-size: 24px;
     font-weight: bold;
     text-align: center;
 }
 
+/* Mobile Nav Styles */
 header nav {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
+/* Navigation links */
 header nav .nav-links {
     list-style: none;
     padding: 0;
+    display: flex;
 }
 
 header nav .nav-links li {
-    display: inline-block;
     margin: 0 15px;
 }
 
+/* Navigation links for small screen */
 header nav .nav-links li a {
     color: white;
     text-decoration: none;
@@ -51,7 +60,27 @@ header nav .nav-links li a:hover {
     color: #ff6347; /* Change to highlight color */
 }
 
-/*Weather*/
+/* Hamburger button */
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.navbar-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+.home{
+  
+    margin-left: 30px;
+}
+
+/* Weather */
 .weather-info {
     display: flex;
     flex-direction: column;
@@ -99,7 +128,7 @@ header nav .nav-links li a:hover {
     color: #ff6347; /* Accent color */
 }
 
-/* -------------Hero Section with Image------------ */
+/* Hero Section with Image */
 .hero-image {
     width: 70%;
     height: auto;
@@ -110,10 +139,12 @@ header nav .nav-links li a:hover {
     color: var(--bg);
     border-radius: 5px;
     box-shadow: 0 3px 10px var(--bg);
-  }
-.center{
+}
+
+.center {
     text-align: center;
-  }
+}
+
 /* Footer styles */
 footer {
     background-color: #333;

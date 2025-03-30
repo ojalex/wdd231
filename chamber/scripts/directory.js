@@ -17,3 +17,11 @@ function displayWeather() {
 // Run function when the page loads
 document.addEventListener("DOMContentLoaded", displayWeather);
 
+// Update date modified
+document.getElementById("lastModified").textContent = document.lastModified;
+
+// Toggle the mobile navigation menu
+document.querySelector('.navbar-toggle').addEventListener('click', function() {
+    document.querySelector('header nav').classList.toggle('active');
+});
+

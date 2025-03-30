@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Official Chamber of Commerce website providing business resources, networking, and community events.">
-    <meta name="author" content="WDD 231 Student">
+    <meta name="Alex Juma" content="WDD 231 Student">
     <meta property="og:title" content="Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="images/chamber-logo.png">
-    <meta property="og:url" content="https://yourchambersite.com">
+    <meta property="og:url" content="https://maleibusiness.com">
     <title>Chamber of Commerce</title>
  
     <!-- Normalize or Reset CSS -->
@@ -27,6 +27,14 @@
     <header>
         <nav>
             <div class="logo">Chamber of Commerce</div>
+            
+            <!-- Hamburger Icon -->
+            <div class="navbar-toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
@@ -36,18 +44,12 @@
             </ul>
         </nav>
     </header>
+    
+    <br>
     <div class="center">
-        <picture >
-            <img src="images/OJ Alex.jpeg"
-                srcset="images/youth-500x250.webp 500w,
-                        images/youth-1000x500.webp 1000w,
-                        images/youth-1500x750.webp 1500w"
-                sizes="(max-width: 500px) 500px, (max-width: 1000px) 1000px, 1500px"  
-                alt="hero image"
-                loading="lazy"
-                class="hero-image">
-        </picture>
+        <img src="images/chember-image.avif" alt="Chamber of Commerce building" class="hero-image">
     </div>
+    <h2 class="home">Home</h2>
     
     <section class="features">
         <div class="feature">
@@ -55,23 +57,21 @@
             <p>Discover local events and networking opportunities.</p>
             <a href="events.html">Explore More</a>
         </div>
-        <section class="feature">
+        <div class="feature">
             <h2>Current Weather</h2>
             <div class="weather-info">
-                <img id="weather-icon" src="images/cloudy.png" alt="Weather Icon">
+                <img id="weather-icon" src="images/cloudy.png" alt="Cloudy Weather">
                 <p><span id="temperature">25</span>°C</p>
                 <p id="description">Sunny</p>
                 <p>Humidity: <span id="humidity">45</span>%</p>
             </div>
-        </section>
-        
+        </div>
         
         <div class="feature">
             <h2>Weather Forecast</h2>
             <p>Today: 90F</p>
             <p>Sunday: 80F</p>
             <p>Monday: 89F</p>
-            
         </div>
     </section>
 
@@ -80,21 +80,21 @@
             <h2>MALEI Business</h2>
             <p><strong>E-Mail:</strong> info@maleibusiness.co.ke</p>
             <p><strong>Number:</strong> +254722164299</p>
-            <p><strong>URL:</strong> www.maleibuseiness.org</p>
+            <p><strong>URL:</strong> <a href="https://www.maleibusiness.org" target="_blank">www.maleibusiness.org</a></p>
             <a href="maleibusiness.html">Explore More</a>
         </div>
         <div class="feature">
             <h2>Morgans Hotel</h2>
             <p><strong>E-Mail:</strong> info@morgans.co.ke</p>
             <p><strong>Phone Number:</strong> +254722164299</p>
-            <p><strong>URL:</strong> www.maleibuseiness.org</p>
+            <p><strong>URL:</strong> <a href="https://www.morganshotel.com" target="_blank">www.morganshotel.com</a></p>
             <a href="morgans.html">Explore More</a>
         </div>
         <div class="feature">
             <h2>Swiss Royal Hotel</h2>
             <p><strong>E-Mail:</strong> info@swissroyal.co.ke</p>
             <p><strong>Phone Number:</strong> +254722164299</p>
-            <p><strong>URL:</strong> www.maleibuseiness.org</p>
+            <p><strong>URL:</strong> <a href="https://www.swissroyalhotel.com" target="_blank">www.swissroyalhotel.com</a></p>
             <a href="swissroyals.html">Explore More</a>
         </div>
     </section>
@@ -123,8 +123,6 @@
         <p>Developed by WDD 231 Student | Last Modified: <span id="lastModified"></span></p>
     </footer>
     
-    <script>
-        document.getElementById("lastModified").textContent = document.lastModified;
-    </script>
+    
 </body>
 </html>

@@ -4,20 +4,58 @@
         font-size: 18px;
     }
 
-    header nav .nav-links li {
-        display: block;
-        margin: 10px 0;
+    /* Hide nav-links on small screen */
+    header nav .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 
-    header nav .nav-links li a {
-        font-size: 16px;
+    /* Show hamburger menu */
+    .navbar-toggle {
+        display: flex;
     }
 
-    .features .feature {
-        margin-bottom: 15px;
+    /* Show nav links when hamburger menu is clicked */
+    header nav.active .nav-links {
+        display: flex;
     }
 
-    .features .feature h2 {
-        font-size: 20px;
-    }
+    .hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
 }
+/* Adjust features to show one column on small screens */
+.features {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.features .feature {
+    width: 100%;
+    margin-bottom: 20px; /* Space between each feature */
+}
+
+.weather-info {
+    text-align: center;
+}
+
+.weather-info img {
+    width: 50px;
+    height: 50px;
+}
+
+footer {
+    background-color: #00447c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+} 
+
+
