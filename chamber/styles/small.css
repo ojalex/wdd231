@@ -13,23 +13,6 @@
         font-size: 16px;
     }
 
-    .hero {
-        padding: 50px 20px;
-    }
-
-    .hero h1 {
-        font-size: 30px;
-    }
-
-    .hero p {
-        font-size: 18px;
-    }
-
-    .cta-button {
-        padding: 14px 24px;
-        font-size: 16px;
-    }
-
     .features .feature {
         margin-bottom: 15px;
     }

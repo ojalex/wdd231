@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 1024px)">
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <script defer src="scripts.js"></script>
+    <script defer src="scripts/directory.js"></script>
 </head>
 <body>
     <header>
@@ -36,22 +36,45 @@
             </ul>
         </nav>
     </header>
+    <div class="center">
+        <picture >
+            <img src="images/youth-500x250.webp"
+                srcset="images/youth-500x250.webp 500w,
+                        images/youth-1000x500.webp 1000w,
+                        images/youth-1500x750.webp 1500w"
+                sizes="(max-width: 500px) 500px, (max-width: 1000px) 1000px, 1500px"  
+                alt="hero image"
+                loading="lazy"
+                class="hero-image">
+        </picture>
+    </div>
     
-    <section class="hero">
-        <img src="images/OJ Alex.jpeg" alt="hero-image">
-        <h1>Welcome to Our Chamber of Commerce</h1>
-        <p>Empowering local businesses and fostering economic growth.</p>
-        <a href="join.html" class="cta-button">Join Us Today</a>
-    </section>
-    <section class="hero">
-        <img src="images/OJ Alex.jpeg" alt="Chamber of Commerce Hero Image" class="hero-img">
-        <div class="hero-text">
-            <h1>Welcome to Our Chamber of Commerce</h1>
-            <p>Empowering local businesses and fostering economic growth.</p>
-            <a href="join.html" class="cta-button">Join Us Today</a>
+    <section class="features">
+        <div class="feature">
+            <h2>Events</h2>
+            <p>Discover local events and networking opportunities.</p>
+            <a href="events.html">Explore More</a>
+        </div>
+        <section id="weather">
+            <h2>Current Weather</h2>
+            <div class="weather-info">
+                <img id="weather-icon" src="images/cloudy.png" alt="Weather Icon">
+                <p><span id="temperature">25</span>°C</p>
+                <p id="description">Sunny</p>
+                <p>Humidity: <span id="humidity">45</span>%</p>
+            </div>
+        </section>
+        
+        
+        <div class="feature">
+            <h2>Weather Forecast</h2>
+            <p>Today: 90F</p>
+            <p>Sunday: 80F</p>
+            <p>Monday: 89F</p>
+            
         </div>
     </section>
-    
+
     <section class="features">
         <div class="feature">
             <h2>Community & Events</h2>
