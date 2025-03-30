@@ -52,16 +52,6 @@ header nav .nav-links li a:hover {
 }
 
 /*Weather*/
-#weather {
-    text-align: center;
-    background: #f0f0f0;
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 300px;
-    margin: 20px auto;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
 .weather-info {
     display: flex;
     flex-direction: column;
@@ -109,6 +99,21 @@ header nav .nav-links li a:hover {
     color: #ff6347; /* Accent color */
 }
 
+/* -------------Hero Section with Image------------ */
+.hero-image {
+    width: 70%;
+    height: auto;
+    max-height: 450px;
+    object-fit: cover;
+    margin: 0 auto;
+    background-color: white;
+    color: var(--bg);
+    border-radius: 5px;
+    box-shadow: 0 3px 10px var(--bg);
+  }
+.center{
+    text-align: center;
+  }
 /* Footer styles */
 footer {
     background-color: #333;
