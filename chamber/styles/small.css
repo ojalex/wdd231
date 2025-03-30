@@ -39,6 +39,18 @@
     margin-bottom: 20px; /* Space between each feature */
 }
 
+/*footer contents */
+.footers {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.footers .footer {
+    width: 100%;
+    margin-bottom: 20px; /* Space between each feature */
+}
+
 .weather-info {
     text-align: center;
 }
@@ -48,13 +60,7 @@
     height: 50px;
 }
 
-footer {
-    background-color: #00447c;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-}
+
 
 } 
 

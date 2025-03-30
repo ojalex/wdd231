@@ -1,9 +1,9 @@
-// Simulated weather data
+// weather data
 const weatherData = {
     temperature: 28, // Static temperature
     description: "Partly Cloudy",
     humidity: 55,
-    icon: "weather-icons/cloudy.png" // Use a local image
+    icon: "images/cloudy.png" // Using a local image showing cloud
 };
 
 // Function to update the UI with static data
