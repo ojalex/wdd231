@@ -1,0 +1,180 @@
+/* Define global CSS variables in :root */
+:root {
+  --bg: #005700;  /* Background(bg) color Green */
+  --bdc: #f5f5f5; /* Body Color(dbc) white*/  
+}
+hr{
+  width: 50%;
+  color: var(--bg);
+}
+.logo{
+  width: 30%;
+  height: 30%;
+  display: flex;
+  padding: 5px; /* Optional padding between border and image */
+}
+
+/*------------Navigation-----------------*/
+.topnav {
+    overflow: hidden;
+    background-color:var(--bg);
+}
+  
+.topnav a {
+  float: right;
+  display: block;
+  color: var(--bdc);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: var(--bdc);
+  color: black;
+  border: solid 1px var(--bg);
+}
+
+.topnav a.logo {
+ 
+  color: var(--bdc);
+  float: left;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+/* -------------Hero Section with Image------------ */
+.hero-image {
+  width: 70%;
+  height: auto;
+  max-height: 450px;
+  object-fit: cover;
+  margin: 0 auto;
+  background-color: white;
+  color: var(--bg);
+  border-radius: 5px;
+  box-shadow: 0 3px 10px var(--bg);
+}
+.center{
+  text-align: center;
+}
+/* -------------Main Content Area------------- */
+.container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ------Grid Items Styling---------- */
+.grid-item {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: white;
+  color: var(--bg);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px var(--bg);
+}
+.aboutus{
+  background-color: var(--bdc);
+  border: 1px solid var(--bg);
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px;
+
+}
+
+.grid-item h2 {
+  margin-top: 0;
+}
+
+/* -------------Body------------------- */
+body {
+  font-family:'Georgia', serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bdc);
+  display: flex;
+  flex-direction: column;
+  color: var(--bg);
+}
+span{
+  color: blue;
+}
+
+h1{
+  text-align: center;
+}
+/* -------------Form-------------- */
+.form-container{
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: white;
+  color: var(--bg);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px var(--bg);
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+select, input[type="text"], input[type="date"], textarea {
+  width: 100%;
+  padding: 15px 1px;
+  margin: 10px 0 20px;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+}
+.frame {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: white;
+  color: var(--bg);
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  border: solid 1px;
+}
+.grid-item2{
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: white;
+  color: var(--bg);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px var(--bg);
+}
+button{
+  background-color: var(--bg);
+  color: var(--bdc);
+  max-width: 500px;
+  margin: 0 auto;
+  background-color:var(--bg);
+  color: var(--bdc);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px var(--bg);
+}
+.shade{
+  background-color: var(--bg);
+  padding: 15px;
+  color: var(--bdc);
+  margin: 0 auto;
+  border-radius: 5px;
+}
+/* -------------footer--------------------- */
+footer {
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    color: var(--bdc);
+    background-color:var(--bg);
+  }
+ 

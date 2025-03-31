@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hope 4 The Youth</title>
+    <meta name="description" content="Hope For The Youth Site-Plan">
+    <meta name="author" content="Alex Otieno Juma">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <script src="scripts/project.js" defer="defer"></script>
+ 
+</head>
+
+<body>
+
+    <header>
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html" class="logo" ><img class="logo"  src="images/logo.jpg" alt="Hope 4 The Youth"></a>
+            <a href="contact.html" id="after">Contact Us</a>
+            <a href="about.html" id="before">About Us</a>
+            <a href="index.html" id="displaysall">Home</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+    <br>
+    <div class="container">
+        <div class="grid-item2">
+            <h3>Contact Us</h3>
+            <p>Contact us to know more about the work we do and how you can help
+            Our charity information <strong>Hope 4 The Youth </strong> is a trust 
+            established in May 2023 under the relevant provisions of the Kenyan 
+            Public Trust Act. </p>
+            <ul>
+                <li>Head Office address</li>
+                <li>Hope for the Youth,</li>
+                <li>P.O. Box 29,</li> 
+                <li>Postal Code 40632,</li>
+                <li>Siaya, Kenya.</li>
+                <li>E-Mail: <a href="jumaalex448@gmail.com">Mail Us</a></li>
+                <li>Phone: <a href="tel:+254722164299">Contact Us</a>
+                </li>
+            </ul>
+
+            <p><i>Click the button that suit the method you would wish to use to contact us.</i></p>
+            
+            <br>
+            <div class="frame">
+                <button onclick="mobile()">Show Mobile Contact</button><br><br>
+                <button onclick="mail()">Show E-Mail Contact</button>
+                <p id="show"></p>
+            </div>
+            
+            
+            
+        </div> 
+    
+        
+        <div>
+            <h1 class="shade">Send your inquiry</h1>
+            <div class="form-container">
+
+                <form id="reviewForm" action="review.html" method="get">
+        
+                    <!-- Product Name -->
+                    <label for="serviceName">Select service:<span>*</span></label>
+                    <select id="serviceName" name="service-name" required>
+                        <option value="" disabled selected>Choose a Service ...</option>
+                        <!-- Dynamically generating product options here using JS-->
+                    </select>
+
+                    <!-- Date of Installation -->
+                    <label for="installation-date">Today's date:<span>*</span></label>
+                    <input type="date" id="installation-date" name="installation-date" required>
+        
+                    <!-- Useful Features -->
+                    <label>Which is the best way to contact you?<span>*</span> </label>
+                    <label><span><i>(Check all that apply)</i></span></label>
+                    <div class="checkbox-group">
+                       
+                            <label for="feature1"><input type="checkbox" id="feature1" name="features" value="Durability"> WhatsApp</label>
+                            <label for="feature2"><input type="checkbox" id="feature2" name="features" value="Ease of Use"> E-Mail</label>
+                            <label for="feature3"><input type="checkbox" id="feature3" name="features" value="Perfomance"> Mobile Number</label>
+                       
+                    </div>
+        
+                    <!-- Written Review -->
+                    <label for="review">Aditional description: <span>(Optional)</span></label>
+                    <textarea id="review" name="review"></textarea>
+        
+                    <!-- User Name -->
+                    <label for="username">Your full name: <span>*</span></label>
+                    <input type="text" id="username" name="username" required>
+        
+                    <!-- Submit Button -->
+                    <input type="submit" value="Submit">
+        
+                </form>
+        </div>
+    </div>
+    </div>
+
+
+    <br>
+
+    <footer>
+        <p id="currentyear"></p> 
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>
+
+
