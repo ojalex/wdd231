@@ -12,4 +12,8 @@
     .features .feature h2 {
         font-size: 26px;
     }
+    .business-listings {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 20px;
+    }
 }

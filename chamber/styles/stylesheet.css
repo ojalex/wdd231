@@ -1,0 +1,210 @@
+/* General reset and normalize */
+@import url('normalize.css');
+
+
+/* Basic styles for body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+/* Button 
+.toggle-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #0056b3;
+}*/
+
+
+/* Header styles */
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Logo */
+.logo {
+    /*font-size: 24px;
+    font-weight: bold;
+    text-align: center;*/
+    width: 10%;
+    height: auto;
+}
+
+/* Mobile Nav Styles */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Navigation links */
+header nav .nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+header nav .nav-links li {
+    margin: 0 15px;
+}
+
+/* Navigation links for small screen */
+header nav .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+header nav .nav-links li a:hover {
+    color: #ff6347; /* Change to highlight color */
+}
+
+/* Hamburger button */
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.navbar-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+.intro{
+  
+    margin: 30px;
+    text-align: center;
+}
+.intro h1{
+    color: #57017e;
+}
+
+/* Weather */
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-info img {
+    width: 50px;
+    height: 50px;
+}
+
+.weather-info p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.features .feature {
+    background-color: rgb(252, 252, 252);
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 2px 8px black;
+    border-radius: 5px;
+}
+
+.features .feature h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.features .feature a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.features .feature a:hover {
+    color: #ff6347; /* Accent color */
+}
+
+/* Footer contents */
+.footers {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    padding: 40px 20px;
+}
+
+.footers .footer {
+    background-color:  #333;
+    padding: 20px;
+    width: 30%;
+}
+
+.footers .footer h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footers .footer a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.footers .footer a:hover {
+    color: #ff6347; /* Accent color */
+}
+
+/* Hero Section with Image */
+.hero-image {
+    width: 70%;
+    height: auto;
+    max-height: 450px;
+    object-fit: cover;
+    margin: 0 auto;
+    background-color: white;
+    color: var(--bg);
+    border-radius: 5px;
+    box-shadow: 0 3px 10px var(--bg);
+}
+
+.center {
+    text-align: center;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 10px 0;
+}

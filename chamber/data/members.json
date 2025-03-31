@@ -1,0 +1,27 @@
+[
+    {
+      "name": "Acme Corp",
+      "address": "123 Main St, Anytown, USA",
+      "phone": "(123) 456-7890",
+      "website": "https://acmecorp.com",
+      "image": "images/logo.png",
+      "membership": 3
+    },
+    {
+      "name": "Tech Innovators",
+      "address": "456 Tech Ave, Silicon Valley, USA",
+      "phone": "(987) 654-3210",
+      "website": "https://techinnovators.com",
+      "image": "images/tech-logo.png",
+      "membership": 2
+    },
+    {
+      "name": "Healthy Living",
+      "address": "789 Wellness Rd, Health City, USA",
+      "phone": "(555) 123-4567",
+      "website": "https://healthyliving.com",
+      "image": "images/healthy-logo.png",
+      "membership": 1
+    }
+  ]
+  

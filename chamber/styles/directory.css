@@ -1,188 +1,60 @@
-/* General reset and normalize */
-@import url('normalize.css');
 
-
-/* Basic styles for body */
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-/* Header styles */
-header {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
-/* Logo */
-header .logo {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-}
-
-/* Mobile Nav Styles */
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
-
-/* Navigation links */
-header nav .nav-links {
-    list-style: none;
-    padding: 0;
-    display: flex;
-}
-
-header nav .nav-links li {
-    margin: 0 15px;
-}
-
-/* Navigation links for small screen */
-header nav .nav-links li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-header nav .nav-links li a:hover {
-    color: #ff6347; /* Change to highlight color */
-}
-
-/* Hamburger button */
-.navbar-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    padding: 10px;
-}
-
-.navbar-toggle div {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 4px 0;
-}
-
-.home{
-  
-    margin-left: 30px;
-}
-
-/* Weather */
-.weather-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.weather-info img {
-    width: 50px;
-    height: 50px;
-}
-
-.weather-info p {
-    font-size: 18px;
-    margin: 5px 0;
-}
-
-/* Features Section */
-.features {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.features .feature {
-    background-color: white;
-    padding: 20px;
-    width: 30%;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-}
-
-.features .feature h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.features .feature a {
-    text-decoration: none;
-    color: #007BFF;
-    font-weight: bold;
-}
-
-.features .feature a:hover {
-    color: #ff6347; /* Accent color */
-}
-
-/* Footer contents */
-.footers {
-    display: flex;
-    justify-content: space-around;
-    text-align: left;
-    padding: 40px 20px;
-}
-
-.footers .footer {
-    background-color:  #333;
-    padding: 20px;
-    width: 30%;
-}
-
-.footers .footer h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.footers .footer a {
-    text-decoration: none;
-    color: #007BFF;
-    font-weight: bold;
-}
-
-.footers .footer a:hover {
-    color: #ff6347; /* Accent color */
-}
-
-/* Hero Section with Image */
-.hero-image {
-    width: 70%;
-    height: auto;
-    max-height: 450px;
-    object-fit: cover;
-    margin: 0 auto;
-    background-color: white;
-    color: var(--bg);
-    border-radius: 5px;
-    box-shadow: 0 3px 10px var(--bg);
-}
-
-.center {
-    text-align: center;
-}
-
-/* Footer styles */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
     padding: 20px 0;
-    font-size: 14px;
 }
 
-footer p {
-    margin: 10px 0;
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Business Listings Grid */
+.business-listings {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Business Card */
+.business-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px black;
+    
+}
+
+.business-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.business-card h2 {
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.business-card p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.business-card a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.business-card a:hover {
+    color: #ff6347;
 }
