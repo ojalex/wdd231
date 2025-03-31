@@ -46,6 +46,7 @@ header {
     height: auto;
 }
 
+
 /* Mobile Nav Styles */
 header nav {
     display: flex;
@@ -98,8 +99,9 @@ header nav .nav-links li a:hover {
     margin: 30px;
     text-align: center;
 }
-.intro h2{
+h1{
     color: #57017e;
+    text-align: center;
 }
 
 /* Weather */
