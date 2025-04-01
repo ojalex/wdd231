@@ -64,6 +64,19 @@
     display: flex;
     flex-direction: column;
 }
+/*Joining Form*/
+.membership-levels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.membership-card {
+    width: 100%;
+    margin: 10px;
+}
 
 
 } 

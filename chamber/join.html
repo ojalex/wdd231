@@ -3,22 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="MALEI is a business membership trade-based support Organization. 
-            MALEI works to protect commercial and Industrial interests of its 
-            members and the business community at large. We also advocate for the 
-            creation of a favorable commercial, trade and investment environment 
-            that supports enterprise expansion and economic growth.">
+    <meta name="description" content="MALEI is a business membership trade-based support Organization. MALEI works to protect commercial and Industrial interests of its members and the business community at large. We also advocate for the creation of a favorable commercial, trade and investment environment that supports enterprise expansion and economic growth.">
     <meta name="author" content="Alex Juma">
     <meta property="og:title" content="MALEI Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://ojalex.github.io/wdd231/chamber/images/malei-logo.jpg">
     <meta property="og:url" content="https://ojalex.github.io/wdd231/chamber/index.html">
     <title>MALEI Chamber of Commerce</title>
- 
+
     <!-- Normalize or Reset CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
     <!-- Main CSS -->
     <link rel="stylesheet" href="styles/stylesheet.css">
+    <!-- Joining form CSS -->
+    <link rel="stylesheet" href="styles/join.css">
     <!-- Mobile Styles -->
     <link rel="stylesheet" href="styles/small.css" media="screen and (max-width: 768px)">
     <!-- Large Screen Styles -->
@@ -26,12 +24,13 @@
 
     <link rel="icon" href="images/malei-logo.PNG" type="image/x-icon">
     <script defer src="scripts/directory.js"></script>
+    <script defer src="scripts/join.js"></script> <!--Handles modals, animations, and timestamp setting-->
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <img src="images/malei-logo.jpg" alt="logo">
+                <img src="images/malei-logo.jpg" alt="MALEI Chamber of Commerce Logo">
             </div>
             
             <!-- Hamburger Icon -->
@@ -50,37 +49,133 @@
             </ul>
         </nav>
     </header>
-   
-    <h1>COMMING SOON.................................</h1>
-    
+
+    <main>
+        <section class="form-container">
+            <h2>Membership Application</h2>
+            <form action="thankyou.html" method="get" id="join-form">
+                <!-- First Name -->
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required autocomplete="given-name" title="Enter your first name.">
+
+                <!-- Last Name -->
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required autocomplete="family-name" title="Enter your last name.">
+
+                <!-- Organization Title -->
+                <label for="organizationTitle">Organization Title:</label>
+                <input type="text" id="organizationTitle" name="organizationTitle" autocomplete="organization-title" pattern="[A-Za-z\-\s]{7,}" title="Only letters, hyphens, and spaces. Minimum 7 characters.">
+
+                <!-- Email -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required autocomplete="email" placeholder="example@email.com" title="Enter a valid email.">
+
+                <!-- Phone -->
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required autocomplete="tel" title="Enter your phone number.">
+
+                <!-- Organization Name -->
+                <label for="organization">Organization Name:</label>
+                <input type="text" id="organization" name="organization" required autocomplete="organization" title="Enter your organization name.">
+
+                <!-- Membership Level -->
+                <label for="membershipLevel">Membership Level:</label>
+                <select id="membershipLevel" name="membershipLevel">
+                    <option value="NP">NP Membership (Free)</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select>
+
+                <!-- Business Description -->
+                <label for="description">Business Description:</label>
+                <textarea id="description" name="description" title="Describe your business."></textarea>
+
+                <!-- Timestamp (hidden) -->
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Membership Cards -->
+        <section class="membership-levels">
+            <h2>Membership Levels</h2>
+            <div class="membership-card" id="np-card">
+                <h3>NP Membership</h3>
+                <button data-modal="np-modal" class="modal-trigger">Learn More</button>
+            </div>
+            <div class="membership-card" id="bronze-card">
+                <h3>Bronze Membership</h3>
+                <button data-modal="bronze-modal" class="modal-trigger">Learn More</button>
+            </div>
+            <div class="membership-card" id="silver-card">
+                <h3>Silver Membership</h3>
+                <button data-modal="silver-modal" class="modal-trigger">Learn More</button>
+            </div>
+            <div class="membership-card" id="gold-card">
+                <h3>Gold Membership</h3>
+                <button data-modal="gold-modal" class="modal-trigger">Learn More</button>
+            </div>
+        </section>
+
+        <!-- Modals -->
+        <dialog id="np-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>Non-Profit Membership</h3>
+                <p>Exclusive benefits for non-profit organizations.</p>
+            </div>
+        </dialog>
+
+        <dialog id="bronze-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>Bronze Membership</h3>
+                <p>Basic membership with community involvement perks.</p>
+            </div>
+        </dialog>
+
+        <dialog id="silver-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>Silver Membership</h3>
+                <p>Includes advertising and promotional benefits.</p>
+            </div>
+        </dialog>
+
+        <dialog id="gold-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>Gold Membership</h3>
+                <p>Premium benefits, event discounts, and more.</p>
+            </div>
+        </dialog>
+    </main>
+
     <footer>
         <section class="footers">
             <div class="footer">
-                <h3>MALEI Business Chember of Commerce</h3>
+                <h3>MALEI Business Chamber of Commerce</h3>
                 <p>40632 Nyamonye, Kenya</p>
                 <p>info@maleibusiness.co.ke</p>
                 <p>+254722164299</p>
-               
-               
             </div>
+
             <div class="footer">
                 <a href="facebook.com">Facebook</a>
-                <a href="twitter.com">twitter</a>
+                <a href="twitter.com">Twitter</a>
                 <a href="instagram.com">Instagram</a>
-               
-                
             </div>
+
             <div class="footer">
                 <p>WDD231 Class Project</p>
                 <p>Alex Juma</p>
-                <p>&copy; 2025 MALEI Chamber of Commerce. </p>
+                <p>&copy; 2025 MALEI Chamber of Commerce</p>
                 <p>Last Modified: <span id="lastModified"></span></p>
             </div>
         </section>
-        
-        
     </footer>
-    
-    
 </body>
 </html>

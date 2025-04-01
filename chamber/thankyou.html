@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MALEI is a business membership trade-based support Organization. 
+            MALEI works to protect commercial and Industrial interests of its 
+            members and the business community at large. We also advocate for the 
+            creation of a favorable commercial, trade and investment environment 
+            that supports enterprise expansion and economic growth.">
+    <meta name="author" content="Alex Juma">
+    <meta property="og:title" content="MALEI Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ojalex.github.io/wdd231/chamber/images/malei-logo.jpg">
+    <meta property="og:url" content="https://ojalex.github.io/wdd231/chamber/index.html">
+    <title>Thank You | MALEI Chamber of Commerce</title>
+
+    <!-- Normalize or Reset CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles/stylesheet.css">
+    <!-- Thank You Page CSS -->
+    <link rel="stylesheet" href="styles/thankyou.css">
+    <!-- Mobile Styles -->
+    <link rel="stylesheet" href="styles/small.css" media="screen and (max-width: 768px)">
+    <!-- Large Screen Styles -->
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 1024px)">
+
+    <link rel="icon" href="images/malei-logo.PNG" type="image/x-icon">
+    <script defer src="scripts/directory.js"></script>
+    <script defer src="scripts/join.js"></script> <!-- Handles modals, animations, and timestamp setting -->
+    <script defer src="scripts/thankyou.js"></script> <!-- Displays form data -->
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/malei-logo.jpg" alt="logo">
+            </div>
+            
+            <!-- Hamburger Icon -->
+            <div class="navbar-toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="thankyou-container">
+            <h2>Thank You for Joining MALEI!</h2>
+            <p>We are excited to have you on board. Here is the information you submitted:</p>
+            
+            <div class="user-info">
+                <p><strong>First Name:</strong> <span id="firstName"></span></p>
+                <p><strong>Last Name:</strong> <span id="lastName"></span></p>
+                <p><strong>Email:</strong> <span id="email"></span></p>
+                <p><strong>Phone:</strong> <span id="phone"></span></p>
+                <p><strong>Organization Name:</strong> <span id="organization"></span></p>
+                <p><strong>Membership Level:</strong> <span id="membershipLevel"></span></p>
+                <p><strong>Submitted On:</strong> <span id="timestamp"></span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footers">
+            <div class="footer">
+                <h3>MALEI Business Chamber of Commerce</h3>
+                <p>40632 Nyamonye, Kenya</p>
+                <p>info@maleibusiness.co.ke</p>
+                <p>+254722164299</p>
+            </div>
+            <div class="footer">
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+            </div>
+            <div class="footer">
+                <p>WDD231 Class Project</p>
+                <p>Alex Juma</p>
+                <p>&copy; 2025 MALEI Chamber of Commerce.</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

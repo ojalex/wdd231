@@ -16,4 +16,22 @@
         grid-template-columns: repeat(3, 1fr);
         margin: 20px;
     }
+
+    /* Joining form arranging membership and form side by side*/
+   
+
+    .form-container  {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .membership-levels {
+        grid-template-columns: repeat(1, 1fr); /* 2 cards per row */
+        margin-top: 0;
+    }
+
+    .form-container,
+    .membership-levels {
+        margin: 5px;
+    }
 }
