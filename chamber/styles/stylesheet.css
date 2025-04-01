@@ -7,7 +7,7 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
-    color: #333;
+    color: black;
     margin: 0;
     padding: 0;
 }
@@ -77,6 +77,8 @@ header nav .nav-links li a {
 
 header nav .nav-links li a:hover {
     color: #ff6347; /* Change to highlight color */
+    box-shadow: inset;
+    font-weight: bold;
 }
 
 /* Hamburger button */
@@ -161,7 +163,7 @@ h1{
 }
 
 .footers .footer {
-    background-color:  #333;
+    background-color: black;
     padding: 20px;
     width: 30%;
 }
@@ -200,7 +202,7 @@ h1{
 
 /* Footer styles */
 footer {
-    background-color: #333;
+    background-color: black;
     color: white;
     text-align: center;
     padding: 20px 0;
