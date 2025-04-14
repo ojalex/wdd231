@@ -1,0 +1,37 @@
+.attractions-grid {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Mobile (1 column) */
+@media (max-width: 640px) {
+    .attractions-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tablet (2 columns) */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .attractions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop (4 columns) */
+@media (min-width: 1025px) {
+    .attractions-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Hover Effect (not for mobile) */
+@media (min-width: 641px) {
+    .attraction-card img {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .attraction-card img:hover {
+        transform: scale(1.1);
+    }
+}

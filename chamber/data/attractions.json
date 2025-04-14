@@ -1,0 +1,51 @@
+[
+    {
+      "name": "Sunset Beach",
+      "address": "123 Ocean Drive, Coast City",
+      "description": "A beautiful beach known for its stunning sunsets and relaxing atmosphere.",
+      "image": "images/sunset-beach.webp"
+    },
+    {
+      "name": "Historic Lighthouse",
+      "address": "456 Cliff Road, Harbor Town",
+      "description": "An iconic lighthouse offering panoramic ocean views.",
+      "image": "images/historic-lighthouse.webp"
+    },
+    {
+      "name": "Sand Beach",
+      "address": "80100 Nyali, Mombasa Town",
+      "description": "A beautiful beach known for its stunning sunsets and relaxing atmosphere.",
+      "image": "images/sand-beach.webp"
+    },
+    {
+      "name": "Fort Jesus",
+      "address": "80100 Mvita, Mombasa Town",
+      "description": "The most outstanding & well preserved Portuguese military fortification and a landmark.",
+      "image": "images/fort-jesus.webp"
+    },
+    {
+      "name": "Vasco Dagama Pillar",
+      "address": "80100 Malindi, Coast Kenya",
+      "description": "The pillar facilitating trade between India and Portugal.",
+      "image": "images/vasco-da-gama.webp"
+    },
+    {
+      "name": "Kango Ka Jaramogi",
+      "address": "40610 Nyamora Girls Road, Bondo Town",
+      "description": "An iconic historic musium offering all Kenyan history on politics and life of Jaramogi.",
+      "image": "images/kanngo-kajaramogi.webp"
+    },
+    {
+      "name": "Diani Beach",
+      "address": "80100 Diani, Ukunda Kenya",
+      "description": "A beautiful beach known for its stunning sunsets and relaxing atmosphere.",
+      "image": "images/diani-beach.webp"
+    },
+    {
+      "name": "The Water Front",
+      "address": "40632 Nyamonye, Bondo Town",
+      "description": "An iconic beach offering panoramic lake views.",
+      "image": "images/water-front.webp"
+    }
+  ]
+  
