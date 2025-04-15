@@ -39,3 +39,4 @@ function mobile() {
 function mail() {
   document.getElementById("show").innerHTML = "E-Mail: juma@gmail.com";
 }
+

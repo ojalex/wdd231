@@ -12,12 +12,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/project.css">
     <link rel="stylesheet" href="styles/project-large.css">
+    <!-- Joining form CSS -->
+    <link rel="stylesheet" href="styles/contact.css">
+    <script src="scripts/contact.js" defer="defer"></script>
     <script src="scripts/project.js" defer="defer"></script>
  
+  <style>
+    
+  </style>
 </head>
-
 <body>
-
     <header>
         <nav class="topnav" id="myTopnav">
             <a href="index.html" class="logo" ><img class="logo"  src="images/logo.jpg" alt="Hope 4 The Youth"></a>
@@ -29,93 +33,89 @@
             </a>
         </nav>
     </header>
-    <br>
     <div class="container">
-        <div class="grid-item2">
-            <h3>Contact Us</h3>
-            <p>Contact us to know more about the work we do and how you can help
-            Our charity information <strong>Hope 4 The Youth </strong> is a trust 
-            established in May 2023 under the relevant provisions of the Kenyan 
-            Public Trust Act. </p>
-            <ul>
-                <li>Head Office address</li>
-                <li>Hope for the Youth,</li>
-                <li>P.O. Box 29,</li> 
-                <li>Postal Code 40632,</li>
-                <li>Siaya, Kenya.</li>
-                <li>E-Mail: <a href="jumaalex448@gmail.com">Mail Us</a></li>
-                <li>Phone: <a href="tel:+254722164299">Contact Us</a>
-                </li>
-            </ul>
+    <div class="grid-item2">
+        <h3>Contact Us</h3>
+        <p>Contact us to know more about the work we do and how you can help
+        Our charity information <strong>Hope 4 The Youth </strong> is a trust 
+        established in May 2023 under the relevant provisions of the Kenyan 
+        Public Trust Act. </p>
+        <ul>
+            <li>Head Office address</li>
+            <li>Hope for the Youth,</li>
+            <li>P.O. Box 29,</li> 
+            <li>Postal Code 40632,</li>
+            <li>Siaya, Kenya.</li>
+            <li>E-Mail: <a href="jumaalex448@gmail.com">Mail Us</a></li>
+            <li>Phone: <a href="tel:+254722164299">Contact Us</a>
+            </li>
+        </ul>
 
-            <p><i>Click the button that suit the method you would wish to use to contact us.</i></p>
-            
-            <br>
-            <div class="frame">
-                <button onclick="mobile()">Show Mobile Contact</button><br><br>
-                <button onclick="mail()">Show E-Mail Contact</button>
-                <p id="show"></p>
-            </div>
-            
-            
-            
-        </div> 
-    
+        <p><i>Click the button that suit the method you would wish to use to contact us.</i></p>
         
-        <div>
-            <h1 class="shade">Send your inquiry</h1>
-            <div class="form-container">
-
-                <form id="reviewForm" action="review.html" method="get">
-        
-                    <!-- Product Name -->
-                    <label for="serviceName">Select service:<span>*</span></label>
-                    <select id="serviceName" name="service-name" required>
-                        <option value="" disabled selected>Choose a Service ...</option>
-                        <!-- Dynamically generating product options here using JS-->
-                    </select>
-
-                    <!-- Date of Installation -->
-                    <label for="installation-date">Today's date:<span>*</span></label>
-                    <input type="date" id="installation-date" name="installation-date" required>
-        
-                    <!-- Useful Features -->
-                    <label>Which is the best way to contact you?<span>*</span> </label>
-                    <label><span><i>(Check all that apply)</i></span></label>
-                    <div class="checkbox-group">
-                       
-                            <label for="feature1"><input type="checkbox" id="feature1" name="features" value="Durability"> WhatsApp</label>
-                            <label for="feature2"><input type="checkbox" id="feature2" name="features" value="Ease of Use"> E-Mail</label>
-                            <label for="feature3"><input type="checkbox" id="feature3" name="features" value="Perfomance"> Mobile Number</label>
-                       
-                    </div>
-        
-                    <!-- Written Review -->
-                    <label for="review">Aditional description: <span>(Optional)</span></label>
-                    <textarea id="review" name="review"></textarea>
-        
-                    <!-- User Name -->
-                    <label for="username">Your full name: <span>*</span></label>
-                    <input type="text" id="username" name="username" required>
-        
-                    <!-- Submit Button -->
-                    <input type="submit" value="Submit">
-        
-                </form>
+        <br>
+        <div class="frame">
+            <button onclick="mobile()">Show Mobile Contact</button><br><br>
+            <button onclick="mail()">Show E-Mail Contact</button>
+            <p id="show"></p>
         </div>
+    </div> 
+    <div>
+        <h1 class="shade">Send your inquiry</h1>
+        <div class="form-container">
+
+    <form action="thankyou.html" method="get" id="myForm">
+        <!-- First Name -->
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required autocomplete="given-name" title="Enter your first name.">
+
+        <!-- Last Name -->
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required autocomplete="family-name" title="Enter your last name.">
+
+        <!-- Organization Title -->
+        <label for="organizationTitle">Organization Title:</label>
+        <input type="text" id="organizationTitle" name="organizationTitle" autocomplete="organization-title" pattern="[A-Za-z\-\s]{7,}" title="Only letters, hyphens, and spaces. Minimum 7 characters.">
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required autocomplete="email" placeholder="example@email.com" title="Enter a valid email.">
+
+        <!-- Phone -->
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required autocomplete="tel" title="Enter your phone number.">
+
+        <!-- Organization Name -->
+        <label for="organization">Organization Name:</label>
+        <input type="text" id="organization" name="organization" required autocomplete="organization" title="Enter your organization name.">
+
+        <!-- Business Description -->
+        <label for="description">Business Description:</label>
+        <textarea id="description" name="description" title="Describe your business."></textarea>
+
+        <!-- Timestamp (hidden) -->
+        <input type="hidden" name="timestamp" id="timestamp">
+
+        <!-- Submit Button -->
+        <button type="button" class="submit" id="submitBtn">Submit</button>
+    </form>
     </div>
     </div>
+    </div>
 
+<!-- Modal Structure -->
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal">
+    <p>Are you sure you want to submit the form?</p>
+    <button class="sure-btn" id="confirmSubmit">Sure</button>
+    <button class="cancel-btn" id="cancelSubmit">No</button>
+  </div>
+</div>
 
-    <br>
-
-    <footer>
-        <p id="currentyear"></p> 
-        <p id="lastModified"></p>
-    </footer>
+<footer>
+    <p id="currentyear"></p> 
+    <p id="lastModified"></p>
+</footer>
 
 </body>
-
 </html>
-
-
