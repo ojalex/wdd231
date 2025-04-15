@@ -124,8 +124,8 @@ dialog::backdrop {
 }
 
 .submit {
-    background-color: #00f7ff;
-    color: black;
+    background-color: #005700;
+    color: white;
     font-weight: bold;
     padding: 10px;
     width: 30%;
