@@ -203,6 +203,9 @@ button{
   color: white;
 }
 /* -------------footer--------------------- */
+.video{
+  color: #f5f5f5;
+}
 footer {
     margin: 0;
     padding: 15px;
